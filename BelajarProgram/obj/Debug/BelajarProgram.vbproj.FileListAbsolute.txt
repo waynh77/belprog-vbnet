@@ -1,0 +1,14 @@
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\bin\Debug\BelajarProgram.exe.config
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\bin\Debug\BelajarProgram.exe
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\bin\Debug\BelajarProgram.pdb
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\bin\Debug\BelajarProgram.xml
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\obj\Debug\BelajarProgram.vbprojAssemblyReference.cache
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\obj\Debug\BelajarProgram.Login_frm.resources
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\obj\Debug\BelajarProgram.Main_frm.resources
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\obj\Debug\BelajarProgram.Resources.resources
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\obj\Debug\BelajarProgram.vbproj.GenerateResource.cache
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\obj\Debug\BelajarProgram.vbproj.CoreCompileInputs.cache
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\obj\Debug\BelajarProgram.exe
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\obj\Debug\BelajarProgram.xml
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\obj\Debug\BelajarProgram.pdb
+C:\Users\wnh\source\repos\BelajarProgram\BelajarProgram\obj\Debug\BelajarProgram.user_frm.resources
