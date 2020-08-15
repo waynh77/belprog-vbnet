@@ -26,4 +26,31 @@
             AdminToolStripMenuItem.Visible = False
         End If
     End Sub
+
+    Private Sub JenisBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles JenisBarangToolStripMenuItem.Click
+        With Jenis_frm
+            .MdiParent = Me
+            .Show()
+            .Top = 0
+            .Left = 0
+        End With
+    End Sub
+
+    Private Sub SatuanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SatuanToolStripMenuItem.Click
+        With satuan_frm
+            .MdiParent = Me
+            .Show()
+            .Top = 0
+            .Left = 0
+        End With
+    End Sub
+
+    Private Sub BarangProdukToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BarangProdukToolStripMenuItem.Click
+        With brg_frm
+            .MdiParent = Me
+            .Show()
+            .Top = 0
+            .Left = 0
+        End With
+    End Sub
 End Class
