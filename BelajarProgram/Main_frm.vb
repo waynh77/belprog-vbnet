@@ -53,4 +53,33 @@
             .Left = 0
         End With
     End Sub
+
+    Private Sub CustomerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CustomerToolStripMenuItem.Click
+        With Customer_frm
+            .MdiParent = Me
+            .Show()
+            .Top = 0
+            .Left = 0
+        End With
+
+    End Sub
+
+    Private Sub SupplierToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SupplierToolStripMenuItem.Click
+        With Supplier_frm
+            .MdiParent = Me
+            .Show()
+            .Top = 0
+            .Left = 0
+        End With
+
+    End Sub
+
+    Private Sub PembelianToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PembelianToolStripMenuItem.Click
+        With TrBeli_frm
+            .MdiParent = Me
+            .Show()
+            .Top = 0
+            .Left = 0
+        End With
+    End Sub
 End Class

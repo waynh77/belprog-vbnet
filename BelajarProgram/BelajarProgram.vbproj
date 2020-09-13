@@ -73,15 +73,36 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="beliDetail_frm.Designer.vb">
+      <DependentUpon>beliDetail_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="beliDetail_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beli_frm.Designer.vb">
+      <DependentUpon>Beli_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Beli_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="brg_frm.Designer.vb">
       <DependentUpon>brg_frm.vb</DependentUpon>
     </Compile>
     <Compile Include="brg_frm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Customer_frm.Designer.vb">
+      <DependentUpon>Customer_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DataSet1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.vb">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Jenis_frm.Designer.vb">
@@ -126,6 +147,18 @@
     <Compile Include="satuan_frm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Supplier_frm.Designer.vb">
+      <DependentUpon>Supplier_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrBeli_frm.Designer.vb">
+      <DependentUpon>TrBeli_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrBeli_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="umum.vb" />
     <Compile Include="user_frm.Designer.vb">
       <DependentUpon>user_frm.vb</DependentUpon>
@@ -135,8 +168,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="beliDetail_frm.resx">
+      <DependentUpon>beliDetail_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beli_frm.resx">
+      <DependentUpon>Beli_frm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="brg_frm.resx">
       <DependentUpon>brg_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_frm.resx">
+      <DependentUpon>Customer_frm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Jenis_frm.resx">
       <DependentUpon>Jenis_frm.vb</DependentUpon>
@@ -155,6 +197,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="satuan_frm.resx">
       <DependentUpon>satuan_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_frm.resx">
+      <DependentUpon>Supplier_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrBeli_frm.resx">
+      <DependentUpon>TrBeli_frm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="user_frm.resx">
       <DependentUpon>user_frm.vb</DependentUpon>

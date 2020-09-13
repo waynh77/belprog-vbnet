@@ -127,6 +127,101 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_HeadBeliTableAdapter" GeneratorDataComponentClassName="View_HeadBeliTableAdapter" Name="View_HeadBeli" UserDataComponentName="View_HeadBeliTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectName="POS.dbo.View_HeadBeli" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        [Id Transaksi], [Tanggal Beli], [Id Supplier], [Nama Supplier], [Id User], [Nama User], Notes
+FROM            View_HeadBeli</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id Transaksi" DataSetColumn="Id Transaksi" />
+              <Mapping SourceColumn="Tanggal Beli" DataSetColumn="Tanggal Beli" />
+              <Mapping SourceColumn="Id Supplier" DataSetColumn="Id Supplier" />
+              <Mapping SourceColumn="Nama Supplier" DataSetColumn="Nama Supplier" />
+              <Mapping SourceColumn="Id User" DataSetColumn="Id User" />
+              <Mapping SourceColumn="Nama User" DataSetColumn="Nama User" />
+              <Mapping SourceColumn="Notes" DataSetColumn="Notes" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_BeliDetailTableAdapter" GeneratorDataComponentClassName="View_BeliDetailTableAdapter" Name="View_BeliDetail" UserDataComponentName="View_BeliDetailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectName="POS.dbo.View_BeliDetail" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT       *
+FROM            View_BeliDetail</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idTrans" DataSetColumn="idTrans" />
+              <Mapping SourceColumn="idBrg" DataSetColumn="idBrg" />
+              <Mapping SourceColumn="Satuan" DataSetColumn="Satuan" />
+              <Mapping SourceColumn="Harga" DataSetColumn="Harga" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="Notes" DataSetColumn="Notes" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+              <Mapping SourceColumn="Jenis Barang" DataSetColumn="Jenis Barang" />
+              <Mapping SourceColumn="Nama Barang" DataSetColumn="Nama Barang" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="msSplTableAdapter" GeneratorDataComponentClassName="msSplTableAdapter" Name="msSpl" UserDataComponentName="msSplTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectName="POS.dbo.msSpl" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [msSpl] WHERE (([idSpl] = ?) AND ((? = 1 AND [Supplier] IS NULL) OR ([Supplier] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_idSpl" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="idSpl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Supplier" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Supplier" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Supplier" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Supplier" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [msSpl] ([Supplier]) VALUES (?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Supplier" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Supplier" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        msSpl.*
+FROM            msSpl</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [msSpl] SET [Supplier] = ? WHERE (([idSpl] = ?) AND ((? = 1 AND [Supplier] IS NULL) OR ([Supplier] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Supplier" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Supplier" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_idSpl" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="idSpl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Supplier" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Supplier" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Supplier" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Supplier" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idSpl" DataSetColumn="idSpl" />
+              <Mapping SourceColumn="Supplier" DataSetColumn="Supplier" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -167,6 +262,90 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="View_HeadBeli" msprop:Generator_TableClassName="View_HeadBeliDataTable" msprop:Generator_TableVarName="tableView_HeadBeli" msprop:Generator_RowChangedName="View_HeadBeliRowChanged" msprop:Generator_TablePropName="View_HeadBeli" msprop:Generator_RowDeletingName="View_HeadBeliRowDeleting" msprop:Generator_RowChangingName="View_HeadBeliRowChanging" msprop:Generator_RowEvHandlerName="View_HeadBeliRowChangeEventHandler" msprop:Generator_RowDeletedName="View_HeadBeliRowDeleted" msprop:Generator_RowClassName="View_HeadBeliRow" msprop:Generator_UserTableName="View_HeadBeli" msprop:Generator_RowEvArgName="View_HeadBeliRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_x0020_Transaksi" msprop:Generator_ColumnVarNameInTable="columnId_Transaksi" msprop:Generator_ColumnPropNameInRow="Id_Transaksi" msprop:Generator_ColumnPropNameInTable="Id_TransaksiColumn" msprop:Generator_UserColumnName="Id Transaksi" type="xs:int" />
+              <xs:element name="Tanggal_x0020_Beli" msprop:Generator_ColumnVarNameInTable="columnTanggal_Beli" msprop:Generator_ColumnPropNameInRow="Tanggal_Beli" msprop:Generator_ColumnPropNameInTable="Tanggal_BeliColumn" msprop:Generator_UserColumnName="Tanggal Beli" type="xs:dateTime" />
+              <xs:element name="Id_x0020_Supplier" msprop:Generator_ColumnVarNameInTable="columnId_Supplier" msprop:Generator_ColumnPropNameInRow="Id_Supplier" msprop:Generator_ColumnPropNameInTable="Id_SupplierColumn" msprop:Generator_UserColumnName="Id Supplier" type="xs:int" />
+              <xs:element name="Nama_x0020_Supplier" msprop:Generator_ColumnVarNameInTable="columnNama_Supplier" msprop:Generator_ColumnPropNameInRow="Nama_Supplier" msprop:Generator_ColumnPropNameInTable="Nama_SupplierColumn" msprop:Generator_UserColumnName="Nama Supplier" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_x0020_User" msprop:Generator_ColumnVarNameInTable="columnId_User" msprop:Generator_ColumnPropNameInRow="Id_User" msprop:Generator_ColumnPropNameInTable="Id_UserColumn" msprop:Generator_UserColumnName="Id User" type="xs:int" />
+              <xs:element name="Nama_x0020_User" msprop:Generator_ColumnVarNameInTable="columnNama_User" msprop:Generator_ColumnPropNameInRow="Nama_User" msprop:Generator_ColumnPropNameInTable="Nama_UserColumn" msprop:Generator_UserColumnName="Nama User">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Notes" msprop:Generator_ColumnVarNameInTable="columnNotes" msprop:Generator_ColumnPropNameInRow="Notes" msprop:Generator_ColumnPropNameInTable="NotesColumn" msprop:Generator_UserColumnName="Notes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_BeliDetail" msprop:Generator_TableClassName="View_BeliDetailDataTable" msprop:Generator_TableVarName="tableView_BeliDetail" msprop:Generator_RowChangedName="View_BeliDetailRowChanged" msprop:Generator_TablePropName="View_BeliDetail" msprop:Generator_RowDeletingName="View_BeliDetailRowDeleting" msprop:Generator_RowChangingName="View_BeliDetailRowChanging" msprop:Generator_RowEvHandlerName="View_BeliDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="View_BeliDetailRowDeleted" msprop:Generator_RowClassName="View_BeliDetailRow" msprop:Generator_UserTableName="View_BeliDetail" msprop:Generator_RowEvArgName="View_BeliDetailRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idTrans" msprop:Generator_ColumnVarNameInTable="columnidTrans" msprop:Generator_ColumnPropNameInRow="idTrans" msprop:Generator_ColumnPropNameInTable="idTransColumn" msprop:Generator_UserColumnName="idTrans" type="xs:int" />
+              <xs:element name="idBrg" msprop:Generator_ColumnVarNameInTable="columnidBrg" msprop:Generator_ColumnPropNameInRow="idBrg" msprop:Generator_ColumnPropNameInTable="idBrgColumn" msprop:Generator_UserColumnName="idBrg" type="xs:int" />
+              <xs:element name="Satuan" msprop:Generator_ColumnVarNameInTable="columnSatuan" msprop:Generator_ColumnPropNameInRow="Satuan" msprop:Generator_ColumnPropNameInTable="SatuanColumn" msprop:Generator_UserColumnName="Satuan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Harga" msprop:Generator_ColumnVarNameInTable="columnHarga" msprop:Generator_ColumnPropNameInRow="Harga" msprop:Generator_ColumnPropNameInTable="HargaColumn" msprop:Generator_UserColumnName="Harga" type="xs:decimal" />
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:int" />
+              <xs:element name="Notes" msprop:Generator_ColumnVarNameInTable="columnNotes" msprop:Generator_ColumnPropNameInRow="Notes" msprop:Generator_ColumnPropNameInTable="NotesColumn" msprop:Generator_UserColumnName="Notes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Jenis_x0020_Barang" msprop:Generator_ColumnVarNameInTable="columnJenis_Barang" msprop:Generator_ColumnPropNameInRow="Jenis_Barang" msprop:Generator_ColumnPropNameInTable="Jenis_BarangColumn" msprop:Generator_UserColumnName="Jenis Barang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nama_x0020_Barang" msprop:Generator_ColumnVarNameInTable="columnNama_Barang" msprop:Generator_ColumnPropNameInRow="Nama_Barang" msprop:Generator_ColumnPropNameInTable="Nama_BarangColumn" msprop:Generator_UserColumnName="Nama Barang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="msSpl" msprop:Generator_TableClassName="msSplDataTable" msprop:Generator_TableVarName="tablemsSpl" msprop:Generator_RowChangedName="msSplRowChanged" msprop:Generator_TablePropName="msSpl" msprop:Generator_RowDeletingName="msSplRowDeleting" msprop:Generator_RowChangingName="msSplRowChanging" msprop:Generator_RowEvHandlerName="msSplRowChangeEventHandler" msprop:Generator_RowDeletedName="msSplRowDeleted" msprop:Generator_RowClassName="msSplRow" msprop:Generator_UserTableName="msSpl" msprop:Generator_RowEvArgName="msSplRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idSpl" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidSpl" msprop:Generator_ColumnPropNameInRow="idSpl" msprop:Generator_ColumnPropNameInTable="idSplColumn" msprop:Generator_UserColumnName="idSpl" type="xs:int" />
+              <xs:element name="Supplier" msprop:Generator_ColumnVarNameInTable="columnSupplier" msprop:Generator_ColumnPropNameInRow="Supplier" msprop:Generator_ColumnPropNameInTable="SupplierColumn" msprop:Generator_UserColumnName="Supplier" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -176,6 +355,14 @@
     <xs:unique name="msbrg_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:msbrg" />
       <xs:field xpath="mstns:idbrg" />
+    </xs:unique>
+    <xs:unique name="View_BeliDetail_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_BeliDetail" />
+      <xs:field xpath="mstns:idTrans" />
+    </xs:unique>
+    <xs:unique name="msSpl_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:msSpl" />
+      <xs:field xpath="mstns:idSpl" />
     </xs:unique>
   </xs:element>
   <xs:annotation>

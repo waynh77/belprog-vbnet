@@ -29,3 +29,8 @@ C:\Belajar Program\VB Net\belprog-vbnet\BelajarProgram\obj\Debug\BelajarProgram.
 C:\Belajar Program\VB Net\belprog-vbnet\BelajarProgram\obj\Debug\BelajarProgram.Jenis_frm.resources
 C:\Belajar Program\VB Net\belprog-vbnet\BelajarProgram\obj\Debug\BelajarProgram.satuan_frm.resources
 C:\Belajar Program\VB Net\belprog-vbnet\BelajarProgram\obj\Debug\BelajarProgram.brg_frm.resources
+C:\Belajar Program\VB Net\belprog-vbnet\BelajarProgram\obj\Debug\BelajarProgram.Customer_frm.resources
+C:\Belajar Program\VB Net\belprog-vbnet\BelajarProgram\obj\Debug\BelajarProgram.Supplier_frm.resources
+C:\Belajar Program\VB Net\belprog-vbnet\BelajarProgram\obj\Debug\BelajarProgram.TrBeli_frm.resources
+C:\Belajar Program\VB Net\belprog-vbnet\BelajarProgram\obj\Debug\BelajarProgram.Beli_frm.resources
+C:\Belajar Program\VB Net\belprog-vbnet\BelajarProgram\obj\Debug\BelajarProgram.beliDetail_frm.resources

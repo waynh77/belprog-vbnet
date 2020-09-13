@@ -42,12 +42,42 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:BelajarProgram.DataSet1.View_HeadBeliDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BelajarProgram.DataSet1.View_BeliDetailDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BelajarProgram.DataSet1.msSplDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:BelajarProgram.DataSet1.tbJenisRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:BelajarProgram.DataSet1.msbrgRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BelajarProgram.DataSet1.View_HeadBeliRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BelajarProgram.DataSet1.View_BeliDetailRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BelajarProgram.DataSet1.msSplRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -62,12 +92,42 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:BelajarProgram.DataSet1.View_HeadBeliRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BelajarProgram.DataSet1.View_BeliDetailRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BelajarProgram.DataSet1.msSplRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:BelajarProgram.DataSet1TableAdapters.tbJenisTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:BelajarProgram.DataSet1TableAdapters.msbrgTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BelajarProgram.DataSet1TableAdapters.View_HeadBeliTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BelajarProgram.DataSet1TableAdapters.View_BeliDetailTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BelajarProgram.DataSet1TableAdapters.msSplTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
