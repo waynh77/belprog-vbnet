@@ -52,7 +52,9 @@
                 End With
                 Me.Close()
                 TrBeli_frm.Enabled = True
-                TrBeli_frm.DataGridView1.Refresh()
+                TrBeli_frm.isiGridHead()
+                TrBeli_frm.DataGridView1.CurrentCell = DataGridView1.Rows(0).Cells(1)
+                TrBeli_frm.isiDetail()
             Else 'update
 
             End If
